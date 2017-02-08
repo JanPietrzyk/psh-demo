@@ -1,0 +1,19 @@
+paths:
+  - path/to/my/scripts
+
+templates:
+  - source: my/templates/greet.tpl
+    destination: greet.txt
+
+const: 
+   greeting: "Hello"
+
+dynamic: 
+   user: "echo $USER"
+
+environments:
+  shout:
+    paths:
+        - path/to/my/scripts
+    const:
+      greeting: "HELLO"
